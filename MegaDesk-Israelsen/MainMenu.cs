@@ -65,7 +65,7 @@ namespace MegaDesk_Israelsen
         private void exit_Click(object sender, EventArgs e)
         {
             // closes MainMenu
-            this.Close();
+            Application.Exit();
         }
     }
 }

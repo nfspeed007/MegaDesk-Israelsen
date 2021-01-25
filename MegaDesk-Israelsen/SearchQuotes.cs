@@ -22,5 +22,10 @@ namespace MegaDesk_Israelsen
             var mainMenu = (MainMenu)this.Tag;
             mainMenu.Show();
         }
+
+        private void close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

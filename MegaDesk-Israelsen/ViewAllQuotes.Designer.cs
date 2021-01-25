@@ -29,13 +29,25 @@ namespace MegaDesk_Israelsen
         /// </summary>
         private void InitializeComponent()
         {
+            this.close = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // close
+            // 
+            this.close.Location = new System.Drawing.Point(475, 319);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(195, 74);
+            this.close.TabIndex = 2;
+            this.close.Text = "Close";
+            this.close.UseVisualStyleBackColor = true;
+            this.close.Click += new System.EventHandler(this.close_Click);
             // 
             // ViewAllQuotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.close);
             this.Name = "ViewAllQuotes";
             this.Text = "ViewAllQuotes";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ViewAllQuotes_FormClosed);
@@ -44,5 +56,7 @@ namespace MegaDesk_Israelsen
         }
 
         #endregion
+
+        private System.Windows.Forms.Button close;
     }
 }
