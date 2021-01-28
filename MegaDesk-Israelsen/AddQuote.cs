@@ -15,6 +15,17 @@ namespace MegaDesk_Israelsen
         public AddQuote()
         {
             InitializeComponent();
+
+            // Makes the list for the desktop material combo box
+            List < DesktopMaterial > materials = Enum.GetValues(typeof(DesktopMaterial))
+                .Cast<DesktopMaterial>().ToList();
+
+            desktopMaterial.DataSource = materials;
+
+            // Makes the list for the rush order combo box
+            List<RushOrder> rush = Enum.GetValues(typeof(RushOrder)).Cast<RushOrder>().ToList();
+
+            rushOrder.DataSource = rush;
         }
 
         private void AddQuote_FormClosed(object sender, FormClosedEventArgs e)

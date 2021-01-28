@@ -187,12 +187,6 @@ namespace MegaDesk_Israelsen
             // desktopMaterial
             // 
             this.desktopMaterial.FormattingEnabled = true;
-            this.desktopMaterial.Items.AddRange(new object[] {
-            "Oak",
-            "Laminate",
-            "Pine",
-            "Rosewood",
-            "Veneer"});
             this.desktopMaterial.Location = new System.Drawing.Point(270, 200);
             this.desktopMaterial.Name = "desktopMaterial";
             this.desktopMaterial.Size = new System.Drawing.Size(131, 24);
